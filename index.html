@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Responsive Page</title>
-  <link rel="stylesheet" type="text/css" href="module2-solution.css">
+  <title>Food, LLC</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-  <h1>Our Menu</h1>
-
-  <div class="container">
-    <div class="section">
-      <div class="section-title">Dumpling</div>
-      <p>The dumpling is baked to perfection and contains cottage cheese,onions,corn,carrots and cabbage</p>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Food, LLC</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Noodles</a></li>
+          <li><a href="#">Tomato Soup</a></li>
+          <li><a href="#">Veg Burger</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <div class="section">
-      <div class="section-title">French fries</div>
-      <p>french fries, also called chips, finger chips, fries, or French pommes frites, side dish or snack typically made from deep-fried potatoes that have been cut into various shapes, especially thin strips.</p>
+  <h1 class="text-center">Our Menu</h1>
+
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="text-center">Noodles</h2>
+          Noodles,a cooked egg-and-flour paste prominent in European and Asian cuisine, generally distinguished from pasta by its elongated ribbon like form. Noodles are commonly used to add body and flavour to broth soups. They are commonly boiled or sautéed and served with sauces and meats or baked in casseroles.
+          Asian noodles are made primarily from starch ingredients other than flour, although the recipes for some Asian pan-fried and stir-fried dishes allow the substitution of wheat-flour noodles for the Chinese mein. Noodles made from rice flour or the starch of the mung bean are softened in water and then boiled and drained in preparation for being fried or added to soups.
+        </div>
+      </div>
     </div>
-
-    <div class="section">
-      <div class="section-title">Pizza</div>
-      <p>pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, mushrooms,chicken,corn</p>
-    </div>
-  </div>
-
+  </section>
 </body>
+
 </html>
