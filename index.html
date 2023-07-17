@@ -2,15 +2,38 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <script>const names = ['Yaakov', 'John', 'Jen', 'Jason', 'Paul', 'Frank', 'Larry', 'Paula', 'Laura', 'Jim'];
+  <script>
+(function () {
+  var helloSpeaker = {};
+  var speakWordHello = "Hello";
 
-for (let i = 0; i < names.length; i++) {
-  const name = names[i];
+  helloSpeaker.speak = function (name) {
+    console.log(speakWordHello + " " + name);
+  };
 
-  if (name.charAt(0).toLowerCase() === 'j') {
-    console.log('Good Bye ' + name);
+  window.helloSpeaker = helloSpeaker;
+})();
+
+(function () {
+  var byeSpeaker = {};
+  var speakWordBye = "Good Bye";
+
+  byeSpeaker.speak = function (name) {
+    console.log(speakWordBye + " " + name);
+  };
+
+  window.byeSpeaker = byeSpeaker;
+})();
+
+var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+
+for (var i = 0; i < names.length; i++) {
+  var firstLetter = names[i].charAt(0).toLowerCase();
+
+  if (firstLetter === "j") {
+    byeSpeaker.speak(names[i]);
   } else {
-    console.log('Hello ' + name);
+    helloSpeaker.speak(names[i]);
   }
 }
 </script>
